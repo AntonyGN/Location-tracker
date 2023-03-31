@@ -31,6 +31,22 @@ Location Tracker is a simple application that allows you to track the country of
 ```Location_Tracker```
 This is the main class that contains all the GUI elements of the application. The constructor takes a single argument ```App``` which is the main ```Tk``` object. It initializes the various labels, buttons and entry widgets needed for the application and places them on the window.
 
+It also defines a method ```Track_location``` that is bound to the track button. This method gets the phone number from the entry widget and calls the ```phone_country``` function to get the country code. It then uses the ```pycountry``` module to get the country name from the code and updates the country label on the GUI.
+
+### Functions
+```phone_country```
+This function takes a phone number as input and returns the country code based on the number. It does this by first extracting the digits from the number using a regular expression. It then uses a dictionary to map the first few digits to the corresponding country code. If the number is not found in the dictionary, it returns ```Unknown```. If there is an error while processing the number, it raises an ```InvalidPhone``` exception.
+
+### Other modules
+```pycountry```
+This is a third-party module that provides data on countries such as their codes and names. It is used to get the name of the country from the country code returned by ```phone_country```.
+
+```tkinter```
+This is a standard Python module that provides a GUI toolkit for Python. It is used to create the GUI elements such as the labels, buttons and entry widget.
+
+```phone_iso3166```
+This is a third-party module that provides a mapping between phone number prefixes and country codes. It is used by the ```phone_country``` function to get the country code from the phone number.
+
 
 
 
