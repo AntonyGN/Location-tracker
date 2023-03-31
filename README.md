@@ -3,8 +3,11 @@ Location Tracker is a simple application that allows you to track the country of
 
 ## To use this code in Jupyter Notebook, follow these steps:
 
-1. Install the required libraries: ```pycountry``` and ```phone_iso3166```. You can do this using ```pip``` by running ```pip install pycountry phone-iso3166``` in a code cell.
-
+1. Install the required libraries: ```pycountry``` and ```phone_iso3166```. 
+```bash
+pip install pycountry
+pip install phone-iso3166
+```
 2. Copy the code for the Location Tracker application into a code cell in Jupyter Notebook.
 
 3. Run the code cell to define the ```Location_Tracker``` class and create an instance of it called ```MyApp```.
