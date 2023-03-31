@@ -25,3 +25,12 @@ Location Tracker is a simple application that allows you to track the country of
 4. Define an instance of the ```Location_Tracker``` class called ```MyApp``` and run the ```mainloop()``` method of the ```Tkinter``` module to start the application's event loop.
 
 5. When the ```Track Country``` button is clicked, the ```Track_location()``` method is called, which retrieves the phone number entered by the user, looks up the corresponding country using ```pycountry``` and ```phone_iso3166``` libraries, and updates the output label with the name of the country.
+
+## Breakdown of the classes and functions used in the code:
+### Classes
+```Location_Tracker```
+This is the main class that contains all the GUI elements of the application. The constructor takes a single argument ```App``` which is the main ```Tk``` object. It initializes the various labels, buttons and entry widgets needed for the application and places them on the window.
+
+
+
+
