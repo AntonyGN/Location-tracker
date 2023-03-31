@@ -14,8 +14,19 @@ pip install phone-iso3166
 
 4. Run the next cell which calls ```PhoneTracker.mainloop()``` to run the ```Tkinter``` event loop and display the application.
 
+- Below is an example of a screenshot from the Application that is displayed
+
+ <p align="">
+  <img width="" height="" src="https://github.com/AntonyGN/Location-tracker/blob/main/1.png">
+ </p>
+
 5. Enter a phone number into the application's input field and click the ```Track Country``` button. The country associated with the phone number's country code will be displayed in the application's output label.
 
+- Here is the screenshot of the Application output after entering a valid phone number
+
+ <p align="">
+  <img width="" height="" src="https://github.com/AntonyGN/Location-tracker/blob/main/2.png">
+ </p>
 
 ## Here's a breakdown of the code:
 
